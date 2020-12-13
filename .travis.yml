@@ -13,4 +13,6 @@ deploy:
   provider: script
   script: docker push jldroid25/docker-github-travis-pipeline
   on:
-    branch: main
+    branch:
+      only:
+        - master
