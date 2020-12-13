@@ -3,5 +3,5 @@ services:
   - docker
   
 script:
-  - docker build -t jldroid25/docker-github-travisPipeline .
+  - docker build -t jldroid25/docker-github-travis-pipeline .
   - docker images DockerGithubTravisPipeline
