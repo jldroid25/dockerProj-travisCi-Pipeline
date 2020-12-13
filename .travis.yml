@@ -5,3 +5,11 @@ services:
 script:
   - docker build -t jldroid25/docker-github-travis-pipeline .
   - docker images DockerGithubTravisPipeline
+  
+before_deploy: -u DOCKER_USERNAME  -p DOCKER_PASSWORD
+
+deploy:
+  provider: script
+  script: jldroid25/docker-github-travis-pipeline
+  on:
+    branch: master
