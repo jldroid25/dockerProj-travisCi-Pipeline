@@ -6,7 +6,7 @@ WORKDIR  /home/ec2-user/environment/node-proj/dockerProj-travisCi-Pipeline/
 
 ENV PATH  /home/ec2-user/environment/app/node_module/.bin:$PATH
 
-COPY .  package*.json ./home/ec2-user/environment/app
+COPY .  package*.json ./home/ec2-user/environment/app/
 
 RUN npm install
 
